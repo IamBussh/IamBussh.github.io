@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Maturski Rad-Karte</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;	 
+	color:#e7e7e7;
+	line-height: 1;
+}
+.container {
+	width:100%;
+	margin: 0 auto;
+	padding: 0 2rem;
+	overflow: hidden;
+}
+
+/* HEADER */
+header {
+	background: url(https://media.discordapp.net/attachments/1377698186742726666/1378367852637327481/crna.jpg?ex=683c5898&is=683b0718&hm=38c712be20f96c1ae2dfcc24785192557c616ba867541b530c59f0a975c94a2a&=&format=webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position:sticky;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.2rem 5rem;
+	z-index: 999;
+}
+nav{
+	display: flex;
+	align-items: center;
+	gap: 3rem;
+	margin-left: -5%;
+}
+nav a{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14pt;
+	font-weight:600;
+	letter-spacing: 0.1rem;
+	transition: color 0.2s ease;
+	text-decoration: none;
+	color: inherit;
+	
+}
+nav a:hover{
+	opacity:0.75;
+	color:#a7a7a7;
+}
+/* KRAJ HEADERA */
+
+/* PRVA STRANA  */
+.PrvaStrana {
+	background: url(https://media.discordapp.net/attachments/1377698186742726666/1378115834509000746/KARTE2.jpg?ex=683b6de3&is=683a1c63&hm=f482250ac6fdd49cb6fcb16e68d4b8302db9c38113de4d803aa3918c42ecce09&=&format=webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height:100vh;
+	text-align:left;
+	font-size: 1.5rem;
+	font-family: 'Montserrat', sans-serif;
+}
+.naslov1 {
+	font-size: 140px;
+	font-weight: 800;
+	text-align:left;
+	padding: 14rem 1rem 1rem 4rem;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 0.9;
+}
+.tekst1{
+	line-height: 1.1;
+	font-size: 1.1rem;
+	padding:1.2rem 4.3rem;
+}
+/* DUGME */
+.dugme {
+	font-family: 'Montserrat', sans-serif;
+	background-color:#ffffff80;
+	color:#56000f;
+	margin:1rem -3rem 0rem 4.3rem;
+	padding: 0.8rem 2rem;
+	border-radius: 60px;
+	font-weight: 800;
+	border: none;
+	font-size:1rem;
+	transition: background-color 0.2s ease;
+	cursor: pointer;
+}
+nav2 a{
+	font-family: 'Montserrat', sans-serif;
+	color:#56000f;
+	font-weight: 800;
+	font-size:1rem;
+	transition: background-color 0.2s ease;
+	cursor: pointer;
+	text-decoration: none;
+}
+nav2 a:hover{
+	opacity:0.4;
+}
+/* KRAJ PRVE STRANE */
+
+/* DRUGA STRANA */
+.DrugaStrana {
+	background: url(https://media.discordapp.net/attachments/1377698186742726666/1378367097377128508/BACKGROUND_druga_strana.png?ex=683c57e4&is=683b0664&hm=b1aaa31b151ec8a610400bc7b3947c8d343f1027c091b1cb38534555f0b38b30&=&format=webp&quality=lossless);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height:100vh;
+	align-items: center;
+	justify-content: center;
+	text-align:left;
+	font-size: 1.5rem;
+	font-family: 'Montserrat', sans-serif;
+}
+.naslov2{
+	font-size: 90px;
+	line-height: 0.8;
+	padding: 14rem 1rem 4rem 45rem;
+	font-family: 'Montserrat', sans-serif;
+}
+.tekst2{
+	padding: 0rem 0rem 0rem 45.4rem;
+	padding-right:400px;
+	text-align:left;
+}
+.kralj{
+	align-self:left;
+}
+/* KRAJ DRUGE STRANE */
+
+/* TRECA STRANA */
+.TrecaStrana {
+	background: url(https://media.discordapp.net/attachments/1377698186742726666/1378147828429230191/BACKGROUND_treca_strana.png?ex=683b8baf&is=683a3a2f&hm=bf5d6764b96dc5b1a19e781f71e8708fa63ff5b7f4681b62185ee3ef64e69fb1&=&format=webp&quality=lossless);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height:105vh;
+	padding:0px 180px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.naslov3 {
+	padding-bottom: 60px;
+	font-weight:800;
+	font-size:60px;
+}
+.tekst3{
+	padding-bottom: 60px;
+	font-size:15px;
+	font-weight: 450;
+}
+/* PRVA KOCKA*/
+.tablici {
+	align-items: center;
+	text-align:left;	
+	background-color:#56000f99;
+	padding: 100px 40px;
+}
+
+/* DRUGA KOCKA*/
+.poker {
+	align-items: center;
+	text-align:left;	
+	background-color:#56000f99;
+	padding: 100px 40px;
+}
+
+/* TRECA KOCKA*/	
+.remi {
+	align-items: center;
+	text-align:left;	
+	background-color:#56000f99;
+	padding: 100px 40px;
+
+}
+
+/* PRIKAZI VISE... */
+nav1 a{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14pt;
+	font-weight: 300;
+	letter-spacing: 0.1rem;
+	transition: color 0.2s ease;
+	text-decoration: none;
+	color: inherit;
+}
+nav1 a:hover{
+	opacity:0.75;
+	color:#a7a7a7;
+}
+/* KRAJ TRECE STRANE */
+
+/* FOOTER */
+.footer{
+	background: url(https://media.discordapp.net/attachments/1377698186742726666/1378367852637327481/crna.jpg?ex=683c5898&is=683b0718&hm=38c712be20f96c1ae2dfcc24785192557c616ba867541b530c59f0a975c94a2a&=&format=webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 25px 30px;
+	letter-spacing: 0.2rem;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 11pt;
+	font-weight: 200;
+	text-align:center;
+}
+/* KRAJ FOOTERA */
+
+
+</style>
+<body>
+	<div class="containter">
+		<header>
+			<nav1>
+				<a href="home.html"> <img src="https://media.discordapp.net/attachments/1377698186742726666/1378367852871946240/LOGO.png?ex=683c5898&is=683b0718&hm=447d50e92f4c32b3c0d92189619a445860b913704cce1a0f3bed9a62beb8fb7b&=&format=webp&quality=lossless" style="width:150px;height:50px;", class="tab"> </a>
+			</nav1>
+			<nav>
+				<a href="Tablici.html"><span>Tablići</span></a>
+				<a href="Poker.html"><span>Poker</span></a>
+				<a href="Remi.html"><span>Remi</span></a>
+			</nav>
+		</header>	
+		
+		<!-- PRVA STRANA  -->
+		<div class="PrvaStrana">
+			<h1 class="naslov1">IGRE SA <br>KARTAMA </h1>
+			<p class="tekst1">Igre s kartama oduvek su bile jedan od najjednostavnijih i najzabavnijih načina <br>
+				za druženje. Bez obzira na uzrast, pravila ili broj igrača, svaka partija donosi novu <br>
+				dozu smeha, izazova i taktike. Uno, memorija, tablić, remi i slične igre često okupljaju <br>
+				porodicu i prijatelje oko stola, daleko od ekrana i svakodnevnog stresa.</p>
+			<nav2>
+			<button class="dugme"><a href="#ISTORIJA">ISTORIJA</a> </button>
+			<button class="dugme"><a href="#VRSTE">VRSTE</a> </button>
+			</nav2>
+		</div>
+		<!-- KRAJ PRVE STRANE. -->
+
+		<!-- DRUGA STRANA. -->
+		<div class="DrugaStrana" id="ISTORIJA">
+			<img src="https://media.discordapp.net/attachments/1377698186742726666/1378367852360368258/KARTE_PNG.png?ex=683c5898&is=683b0718&hm=077074f59ab760f4b0a6214b1608802b141afbce8a1a3527d9c6ac2499f52ecf&=&format=webp&quality=lossless&width=712&height=856" align="left" style="height:100vh;",class="kralj">
+			<h1 class="naslov2">Kratka Istorija <br>Karata  </h1>
+			<p class="tekst2">Igračke karte potiču iz Kine, gde su se pojavile oko 9. veka, verovatno kao papirni novac koji se koristio i za igru. Iz Kine su se proširile preko Persije i islamskog sveta, gde su se oblikovali rani špilovi sa simbolima poput mačeva i pehara.
+				U Evropu su karte stigle u 14. veku, najverovatnije preko trgovaca ili krstaša. Prve evropske karte bile su ručno oslikavane i luksuzne, a vremenom su se razvile različite vrste špilova, uključujući i francuski (današnji najčešći) sa simbolima srce, karo, pik i tref.
+				Tokom vekova, karte su se koristile ne samo za igre, već i za proricanje sudbine (tarot), obrazovanje, pa čak i propagandu. Danas su igre s kartama deo svetske kulture i prisutne su u gotovo svakom domu – kao sredstvo zabave, učenja i druženja.
+			</p>
+		</div>
+		<!-- KRAJ DRUGE STRANE. -->
+
+		<!-- TRECA STRANA. -->
+		<div class="TrecaStrana" id="VRSTE">
+			<div class="tablici">
+				<h1 class="naslov3">TABLIĆI</h1>
+				<p class="tekst3">Tablić je popularna kartaška igra koja se<br> najčešće igra u dvoje, ali može i u <br>parovima. Cilj igre je skupljanje karata sa<br> stola sabiranjem njihovih vrednosti. <br>
+					Posebne poene donose karte poput <br>desetke karo, dvojke tref i "tablić" – kada se <br>sve karte pokupe odjednom. Igra je<br> jednostavna, zabavna i omiljena u<br> porodičnom i društvenom okruženju.			
+				</p>
+				<nav1>
+				<a href="Tablici.html"><span>Saznaj vise...</span></a>
+				</nav1>
+			</div>
+			<div class="poker">
+				<h1 class="naslov3">POKER</h1>
+				<p class="tekst3">Poker je jedna od najpoznatijih kartaških igara<br> na svetu, koja kombinuje veštinu, strategiju i<br> element sreće. Igra se sa standardnim špilom<br> od 52 karte, a cilj je sastaviti najjaču<br> kombinaciju ili uspešno blefirati protivnike. <br>
+					Postoji više varijanti pokera, među kojima su<br> najpoznatije Texas Hold'em i Omaha. Poker se<br> igra rekreativno, ali i profesionalno na<br> turnirima širom sveta.			
+				</p>
+				<nav1>
+				<a href="Poker.html"><span>Saznaj vise...</span></a>
+				</nav1>
+			</div>
+			<div class="remi">
+				<h1 class="naslov3">REMI</h1>
+				<p class="tekst3">Remi je popularna kartaška igra koja se<br> igra sa jednim ili dva standardna špila<br> karata. Cilj igre je da se formiraju<br> kombinacije karata – nizovi iste boje ili<br> grupe istih vrednosti. 
+					Igra zahteva dobru<br> memoriju, taktiku i pažljivo planiranje<br> poteza. Remi je omiljen u porodičnom i<br> društvenom okruženju jer spaja zabavu i<br> razmišljanje.			
+				</p>
+				<nav1>
+				<a href="Remi.html"><span>Saznaj vise...</span></a>
+				</nav1>
+			</div>
+		</div>
+		<!-- KRAJ TRECE STRANE. -->
+		<footer class="footer">Andrija Tomic IV-2</footer>
+	</div>
+<!-- Autor-Andrija Tomic IV-2 -->
+</body>
+
+</html>
